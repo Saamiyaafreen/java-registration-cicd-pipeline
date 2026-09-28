@@ -38,8 +38,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.example.demo.DemoApplication</mainClass>
+                </configuration>
             </plugin>
-            <!-- SonarQube Plugin -->
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
@@ -47,15 +49,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <!-- 
-    NOTE: distributionManagement is commented out because we skipped Artifactory.
-    <distributionManagement>
-        <repository>
-            <id>jfrog</id>
-            <name>libs-release</name>
-            <url>http://localhost:8081/artifactory/libs-release-local</url>
-        </repository>
-    </distributionManagement>
-    -->
 </project>
