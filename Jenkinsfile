@@ -1,6 +1,5 @@
 pipeline { 
     agent any   
-    tools { maven 'Maven' }   
     environment { DOCKER_IMAGE = 'saamiya16/java-registration-app' }   
     stages { 
         stage('Checkout') { 
